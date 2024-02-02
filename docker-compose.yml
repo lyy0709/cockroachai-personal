@@ -4,10 +4,17 @@ services:
     image: xyhelper/cockroachai:latest
     restart: always
     ports:
-      - "9000:9000"
+      - "9000:9000" #左侧端口暴露在外,可根据需求更改
     volumes:
       - ./config:/app/config
+        # - ./resource:/app/resource
     environment:
       ASSET_PREFIX: https://oaistatic-cdn.closeai.biz
-
+  cockroachai-web:
+    image: lyy0709/cockroachai-web:latest
+    restart: always
+    ports:
+      - "8999:8999" #左侧端口暴露在外,可根据需求更改
+    volumes:
+      - ./config:/usr/src/app/config
   
