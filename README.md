@@ -10,7 +10,7 @@
 
 ## 更新方法
 
-1. 拉取我的项目或者单独复制docker-compose.yml里的内容
+1. 拉取我的项目或者单独复制docker-compose.yml里的内容（建议以及配置好cockroachai的选择单独复制docker-compose.yml里的内容，但注意设置固定管理员密码）
 
 2. 执行`./deploy.sh` 完成更新
 
