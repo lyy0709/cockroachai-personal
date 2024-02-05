@@ -22,7 +22,11 @@
 git clone https://github.com/lyy0709/cockroachai-web.git cockroachai
 ```
 
-3. 执行`./deploy.sh` 完成更新
+2. 执行`./deploy.sh` 完成更新
+- 执行指令
+```bash
+cd cockroachai && ./deploy.sh
+```
 
 ## 功能
 
