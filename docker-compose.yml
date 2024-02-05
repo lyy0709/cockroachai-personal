@@ -7,7 +7,6 @@ services:
       - "9000:9000" #左侧端口暴露在外,可根据需求更改
     volumes:
       - ./config:/app/config
-        # - ./resource:/app/resource
     environment:
       ASSET_PREFIX: https://oaistatic-cdn.closeai.biz
   cockroachai-web:
@@ -17,4 +16,5 @@ services:
       - "8999:8999" #左侧端口暴露在外,可根据需求更改
     volumes:
       - ./config:/usr/src/app/config
+      - /var/run/docker.sock:/var/run/docker.sock
   
