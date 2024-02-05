@@ -10,7 +10,7 @@
 
 ## 更新功能
 
-- 更新刷新cockroachai的登录，输入cockroachai的容器名，未更改应该为cockroachai_cockroachai_1，可实现删除后启动容器实现对usertokens的刷新（防止token过期后依然白嫖）
+- 更新刷新cockroachai的登录，输入cockroachai的容器名，未更改应该为cockroachai_cockroachai_1或cockroachai-cockroachai-1，可实现删除后启动容器实现对usertokens的刷新（防止token过期后依然白嫖）
 - 重要！需将cockroachai文件夹放在/home文件夹下，即/home/cockroachai，防止白嫖功能才能生效
 
 ## 更新方法
