@@ -17,7 +17,12 @@
 
 1. 拉取我的项目或者单独复制docker-compose.yml里的内容（建议以及配置好cockroachai的选择单独复制docker-compose.yml里的内容，但注意设置固定管理员密码），建议放置于/home文件夹下
 
-2. 执行`./deploy.sh` 完成更新
+- 拉取指令
+```bash
+git clone https://github.com/lyy0709/cockroachai-web.git cockroachai
+```
+
+3. 执行`./deploy.sh` 完成更新
 
 ## 功能
 
