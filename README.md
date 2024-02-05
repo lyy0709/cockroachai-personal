@@ -8,9 +8,14 @@
 
 - 请在使用时将./config/condig.yaml文件夹中需要的功能解除注释，即变为启用状态，并固定一个管理员密码，本项目会清除注释项，仅支持ip:端口登录，其他错误概不负责，上传refreshcookie只确保能上传不确保能否使用
 
+## 更新功能
+
+- 更新刷新cockroachai的登录，输入cockroachai的容器名，未更改应该为cockroachai_cockroachai_1，可实现删除后启动容器实现对usertokens的刷新（防止token过期后依然白嫖）
+- 重要！需将cockroachai文件夹放在/home文件夹下，即/home/cockroachai，防止白嫖功能才能生效
+
 ## 更新方法
 
-1. 拉取我的项目或者单独复制docker-compose.yml里的内容（建议以及配置好cockroachai的选择单独复制docker-compose.yml里的内容，但注意设置固定管理员密码）
+1. 拉取我的项目或者单独复制docker-compose.yml里的内容（建议以及配置好cockroachai的选择单独复制docker-compose.yml里的内容，但注意设置固定管理员密码），建议放置于/home文件夹下
 
 2. 执行`./deploy.sh` 完成更新
 
@@ -21,6 +26,10 @@
 - 后台管理userTokens（实时生效）
 
 - 后台管理refreshcookie（不实时生效，只添加一个可上传的接口）
+
+- 跳转到账号登录
+
+- 实现token刷新
 
 ## 配置要求
 
@@ -60,6 +69,7 @@ services:
       - "8999:8999" #左侧端口暴露在外,可根据需求更改
     volumes:
       - ./config:/usr/src/app/config
+      - /var/run/docker.sock:/var/run/docker.sock
   
 ```
 
