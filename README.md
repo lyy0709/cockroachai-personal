@@ -11,6 +11,8 @@
 ## 更新功能
 
 - 更新刷新cockroachai的登录，输入cockroachai的容器名，未更改应该为cockroachai_cockroachai_1或cockroachai-cockroachai-1，可实现删除后启动容器实现对usertokens的刷新（防止token过期后依然白嫖）
+- 容器名可在运行后的输出中查看，如下
+[![pF1ATd1.jpg](https://s11.ax1x.com/2024/02/06/pF1ATd1.jpg)](https://imgse.com/i/pF1ATd1)
 - 重要！需将cockroachai文件夹放在/home文件夹下，即/home/cockroachai，防止白嫖功能才能生效
 
 ## 更新方法
@@ -81,6 +83,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
   
 ```
+## 运行图片
 
+[![pF1AoZR.jpg](https://s11.ax1x.com/2024/02/06/pF1AoZR.jpg)](https://imgse.com/i/pF1AoZR)
+[![pF1A7Ix.jpg](https://s11.ax1x.com/2024/02/06/pF1A7Ix.jpg)](https://imgse.com/i/pF1A7Ix)
 
 
