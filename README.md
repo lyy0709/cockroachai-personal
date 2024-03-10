@@ -1,5 +1,6 @@
 # cockroachai-web
 
+## 更新了新的账户系统更加方便，指路[cockroachai-oauth](https://github.com/lyy0709/cockroachai-oauth)
 此为增加了管理后台的cockroachai版本，写的比较匆忙部分功能未实现，如refreshcookie的实时显示，未实现refreshcookie的热加载（蟑螂本身不支持）导致此功能只有在refreshcookie过期时可用，未添加审计接口，未做安全防范，请不要暴露你的ip以及其他信息，项目打包好已开源，开源地址[cockroachai-web-code](https://github.com/lyy0709/cockroachai-web-code)
 
 交流群: https://t.me/xyhelper
